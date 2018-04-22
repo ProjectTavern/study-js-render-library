@@ -6,7 +6,25 @@
     <!-- Import jQuery Globally -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
+<style>button {margin-bottom: 9px;}</style>
 <body>
-
+<button id="changeName">Change name</button>
+<button id="addPhone">Add Phone</button>
+<div id="result"></div>
+<script id="personTmpl" type="text/x-jsrender">
+  <table class="nowidth"><tbody>
+    <tr><td>Name:</td><td>{{:name()}}</td></tr>
+    <tr><td>Street:</td><td>{{:address().street()}}</td></tr>
+    <tr><td>Phones:</td><td>
+      <table class="nowidth"><tbody>
+        {{for phones()}}
+          <tr><td>
+            {{:number()}}
+          </td></tr>
+        {{/for}}
+      </tbody></table>
+    </td></tr>
+  </tbody></table>
+</script>
 </body>
 </html>
