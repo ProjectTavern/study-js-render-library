@@ -6,7 +6,7 @@
   "license": "MIT",
   "homepage": "https://qoov.github.io/",
   "scripts": {
-    "start:dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
+    "start": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js --open",
     "build": "webpack -p --progress --mode production --config webpack.config.build.js"
   },
   "repository": {
@@ -14,6 +14,9 @@
     "url": "https://github.com/qoov/Study-JSRender.git"
   },
   "dependencies": {
+    "jsrender": "^0.9.90",
+    "jsview": "^2.1.0",
+    "jsviews": "^0.9.90",
     "lodash": "4.17.5"
   },
   "devDependencies": {
