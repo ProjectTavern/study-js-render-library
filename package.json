@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "jsrender": "^0.9.90",
-    "jsview": "^2.1.0",
     "jsviews": "^0.9.90",
     "lodash": "4.17.5"
   },

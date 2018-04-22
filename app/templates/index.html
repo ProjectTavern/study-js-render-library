@@ -2,35 +2,11 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>JSRender</title>
+    <title>JSRender Playgrounds Page</title>
+    <!-- Import jQuery Globally -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script id="theTmpl" type="text/x-jsrender">
-        <label>Name:</label> {{:name}}
-    </script>
-    <script id="personTmpl" type="text/x-jsrender">
-        <label>Name:</label> {{:name}}
-    </script>
 </head>
 <body>
-    <h1>JS-Render TestPage</h1>
-    <div id="container"></div>
-    <div id="result"></div>
-    <table><tbody id="peopleList"></tbody></table>
-    <script id="peopleTmpl" type="text/x-jsrender">
-    <tr>
-        <td>
-            <ul>
-              {{for people}}
-                <li>
-                  {{:name}}
-                  {{if nickname}}
-                    ( {{:nickname}} )
-                  {{/if}}
-                </li>
-              {{/for}}
-            </ul>
-       </td>
-    </tr>
-    </script>
+
 </body>
 </html>
