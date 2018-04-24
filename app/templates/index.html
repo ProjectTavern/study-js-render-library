@@ -6,25 +6,31 @@
     <!-- Import jQuery Globally -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
-<style>button {margin-bottom: 9px;}</style>
 <body>
-<button id="changeName">Change name</button>
-<button id="addPhone">Add Phone</button>
-<div id="result"></div>
-<script id="personTmpl" type="text/x-jsrender">
-  <table class="nowidth"><tbody>
-    <tr><td>Name:</td><td>{{:name()}}</td></tr>
-    <tr><td>Street:</td><td>{{:address().street()}}</td></tr>
-    <tr><td>Phones:</td><td>
-      <table class="nowidth"><tbody>
-        {{for phones()}}
-          <tr><td>
-            {{:number()}}
-          </td></tr>
-        {{/for}}
-      </tbody></table>
-    </td></tr>
-  </tbody></table>
-</script>
+<div id="leecColl">
+    <ul class="list_tab">
+        <li>
+            <a href="javascript:;" class="txt_tab">
+                일탭
+                <span class="ico">HQ</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" class="txt_tab">
+                이탭
+                <span class="ico">HQ</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" class="txt_tab">
+                삼탭
+                <span class="ico">HQ</span>
+            </a>
+        </li>
+    </ul>
+    <div class="cont_tab">
+        <div>일내용</div>
+    </div>
+</div>
 </body>
 </html>
