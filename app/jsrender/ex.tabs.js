@@ -1,7 +1,7 @@
 (function () {
     function TabsController ( tabs, content ) {
         this.$tabs = $(tabs);
-        this.contents = [content];
+        this.$contents = $(content);
         this.userData = null;
 
         this.init();
@@ -34,7 +34,14 @@
         },
         clickEvent: function (event) {
             var $elem = $(event.currentTarget);
-            var usableTabIndex = $elem.index() + 1;
+            var currentTabIndex = $elem.index();
+            var usableTabIndex = currentTabIndex + 1;
+
+            // Contents Events
+            this.$contents.removeClass('on');
+            this.$contents.eq(currentTabIndex).addClass('on');
+
+            // Tab Events
             this.$tabs.off('click');
             console.log("Clicked Element: ",$elem);
             function initEvent(index, elem) {
