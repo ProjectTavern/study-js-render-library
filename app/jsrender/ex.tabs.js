@@ -3,10 +3,10 @@
         this.$tabs = $(tabs);
         this.$contents = $(content);
         this.userData = {
-            si: null,
-            do: null,
-            gun: null,
-            gu: null
+            lv: null,
+            wp: null,
+            da: null,
+            ac: null
         };
 
         this.init();
