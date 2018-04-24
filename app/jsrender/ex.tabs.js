@@ -2,7 +2,12 @@
     function TabsController ( tabs, content ) {
         this.$tabs = $(tabs);
         this.$contents = $(content);
-        this.userData = null;
+        this.userData = {
+            si: null,
+            do: null,
+            gun: null,
+            gu: null
+        };
 
         this.init();
     }
