@@ -1,7 +1,6 @@
 let data = {
     title: "My list",
     list: [2, 10.3, 77, -44, -5.5]
-
 };
 
 let tmpl = $.templates({
