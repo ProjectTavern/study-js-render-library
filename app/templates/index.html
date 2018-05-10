@@ -5,7 +5,20 @@
     <title>Document</title>
 </head>
 <body>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript">
+    Kakao.init('YOUR APP KEY');
 
+    Kakao.Link.sendCustom({
+        templateId: "",
+        templateArgs: { "name": "Kakao", "url":"https//developers.kakao.com" },
+        installTalk: false,
+        fail: function (error) { console.error(error); },
+        success: function (messageObj) { console.log(messageObj); }
+    })
+    .done(result => console.log(result))
+    .fail(error => console.log(error))
+</script>
 
 
 </body>
